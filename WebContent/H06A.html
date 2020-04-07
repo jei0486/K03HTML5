@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> H06A.html-하이퍼링크</title>
+</head>
+<body>
+
+<!--  
+링크를 걸떄 경로 알아보기
+절대주소 (절대경로)
+	:현재의 위치가 바뀌더라도 주소가 변하지 않는 절대적인
+	주소를 말한다. 주로 http://를 통해 외부링크를 걸거나
+	/(홈 디렉토리로 root를 의미함)로 시작하는 링크를 걸게된다.
+
+상대주소 (상대경로)
+	: 현재 페이지의 위치에 따라 상대적으로 변하는 주소를 말한다.
+	./ ->현재경로(디렉토리)를 의미한다.
+		현재경로인 경우 생략이 가능하다.
+	../ ->한단계 상위 디렉토리를 의미한다.
+	../../ -> 2단계 상위 디렉토리를 의미한다.
+-->
+<h2>상대경로와 절대경로 알아보기</h2>
+<ul>
+	<li><a href="SubFolder1/SubFile1.html"
+	>서브파일1 바로가기</a></li>
+	<li><a href="./SubFolder1/SubFolder2/SubFile2.html"
+	>서브파일2 바로가기</a></li>
+</ul>
+
+<h3>절대경로로 링크걸기</h3>
+
+<ul>
+
+<li><a href="/K03HTML5/SubFolder1/SubFile1.html">
+서브파일1 바로가기
+</a></li>
+<li><a href="/K03HTML5/SubFolder1/SubFolder2/SubFile2.html">
+서브파일2 바로가기
+</a></li>
+
+
+</ul>
+
+
+
+<h2>a 태그</h2>
+
+<a href="H04DlDtDd.html">DL 예제로 이동하기</a>
+<br />
+<a href="http://naver.com" target="_blank">네이버로 이동하기</a>
+
+<h2>옥션 상품 바로가기</h2>
+<a href="http://www.11st.co.kr/product/SellerProductDetail.
+tmall?method=getSellerProductDetail&prdNo=2661293490&gclid=
+EAIaIQobChMIu4LUua_L6AIVS6aWCh3S9Aq5EAQYAiABEgJ2fPD_BwE&utm_term=&
+utm_campaign=%B1%B8%B1%DB%BC%EE%C7%CEPC+%C3%DF%B0%A1%C0%DB%BE%F7&utm_
+source=%B1%B8%B1%DB_PC_S_%BC%EE%C7%CE&utm_medium=%B0%CB%BB%F6"
+target="_blank">
+노트북 보기</a>
+
+<!--  
+a 태그에 이름을 지정하는것을 앵커(Ancher)라고한다.
+<a href="#앵커명"></a> 형태로 사용하고 해당페이지내에서 특정위치로 이동하게된다.
+앵커명없이 #만 사용하려면 페이지의 최상단으로 이동한다.
+쇼핑몰의 바로가기 버튼을이렇게 구현한다.
+ -->
+
+<h3>a태그를 이용해서 페이지내 특정위치로 이동하기</h3>
+<a href="#bottom1">페이지내 name="bottom1"으로 이동</a>
+<a href="#bottom2">페이지내 name="bottom2"으로 이동</a>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<h3>여기는 bottom1입니다.</h3>
+<a name="bottom1">난 bottom1 임</a>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<h3>여기는 bottom2입니다.</h3>
+<a name="bottom2">난 bottom2 임</a>
+<br />
+<a href="#bottom1">bottom1 바로가기</a>
+<br />
+<a href="#">페이지 최상단 바로가기</a>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+
+</body>
+</html>
